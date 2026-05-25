@@ -18,7 +18,7 @@
 
 <body>
     <button id="playBtn" onclick="toggleMusic()">▶ Play Music</button>
-    <audio id="myAudio" src="your-song.mp3" loop></audio>
+    <audio id="myAudio" src="Rewind.mp3" loop></audio>
     <div id="loading">
         <div id="spinner"></div>
     </div>
@@ -142,18 +142,6 @@
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
-    function toggleMusic() {
-      const audio = document.getElementById("myAudio");
-      const btn = document.getElementById("playBtn");
-
-      if (audio.paused) {
-        audio.play();
-        btn.textContent = "⏸ Pause Music";
-      } else {
-        audio.pause();
-        btn.textContent = "▶ Play Music";
-      }
-    }
 </body>
 
 </html>
